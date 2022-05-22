@@ -1,0 +1,320 @@
+@font-face {
+    font-family: poppins_regular;
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf)
+  }
+@font-face{
+    font-family: poppins_bold;
+    src:url(../Fonts/Poppins/Poppins-Bold.ttf)
+} 
+@font-face{
+    font-family: poppins_italic;
+    src:url(../Fonts/Poppins/Poppins-Italic.ttf)
+}  
+
+*{  
+    padding:0%;
+    margin:0%;
+    border:0%;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.jst_center{
+    justify-content: center;
+}
+.jst_left{
+    justify-content: left;
+}
+.a_c{
+    align-items: center;
+}
+body{
+    background-color: #101039;
+    color:#fffcf2;
+    
+    width:100%;
+    padding:0px;
+}
+.main{
+    position:relative;
+    width:100%;
+    font-size: 15px;
+    font-family: poppins_regular;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+/*========================================
+           Start Of Splash Section
+========================================*/
+.container{
+    width:100%;
+    padding:20px 15px 10px;
+    
+}
+.splash_image{
+    width:100%;
+    height:55vh;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.splash_image img{
+    height:160px!important;
+    width:160px!important;
+}
+.splash_title{
+    width:80%;
+    margin-left: 10%;
+    min-height: 20px;
+    text-align: center;
+    line-height: 1.7em;
+}
+.splash_title span{
+    color:#ffde59;
+}
+.splash_extra{
+    width:80%;
+    margin-top: 10px;
+    margin-left: 10%;
+    font-size: 12px;
+    line-height: 1.4em;
+    color:lightgray;
+    text-align: center;
+}
+.splash_button{
+    width:80%;
+    margin-left: 10%;
+    margin-top: 50px;;
+}
+.splash_button button{
+    width:100%;
+    height:38px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffde59;
+    color:#161744;
+    font-weight:bold;
+}
+
+/*========================================
+           End Of Splash Section
+========================================*/
+/*========================================
+           Start Of Home Section
+========================================*/
+/*---------Home Header Starts------------*/
+.homeheader{
+    width:100%;
+    height:50px;
+    text-align: center;
+}
+.homeheader img{
+     width:12px;
+     height:12px;
+     margin-right: 10px;
+}
+.homeheader .header_location{
+    width:200px;
+}
+.header_location p{
+    font-size: 12px;
+    font-weight: bold;
+}
+/*---------Home Header Ends--------------*/
+
+/*----- Home Main Display starts---------*/
+.main_display{
+    width:100%;
+    min-height:100px;
+    border-radius: 20px;
+    padding:10px 0px;
+    background-color: #1a1c49;
+}
+.main_top{
+    width:100%;
+    min-height: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+   
+}
+.main_top_unit{
+    width:50%;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    
+}
+.main_top_unit p.main_today{
+    font-weight:bold;
+    font-family:poppins_bold;
+    font-size: 20px;;
+}
+.main_middle{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    min-height:20px;
+}
+.main_middle_left{
+    width:50%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:36px;
+    font-weight:bold;
+    font-family:poppins_bold;
+    
+}
+.main_middle_left sup{
+    font-size:24px;
+    color: #ffde59;
+}
+.main_middle_left img{
+    width:60px;
+    height:60px;
+}
+.main_bottom{
+    width:100%;
+    margin-top:20px;
+    margin-bottom: 10px;
+    min-height:8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main_bottom img{
+    height:15px;
+    width:15px;
+    margin-right: 5px;
+}
+
+
+/*------ Home Main Display Ends----------*/
+
+/*------ Home Main Forecast starts----------*/
+.forecast_section{
+    width:100%;
+    min-height: 200px;
+}
+.forecast_tabs{
+    width:80%;
+    margin-left: 10%;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab{
+    width:33%;
+    height:50px;
+    padding:5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tab p{
+    font-size: 12px;
+}
+.active_tab p{
+    font-weight: bold;
+    font-family: poppins_bold;
+    color:#ffde59;
+}
+.forecast_data{
+    width:100%;
+    min-height: 50px;
+    padding:20px 0px;
+}
+.forecast_unit{
+    width:100%;
+    min-height:50px;
+    padding:0px 5px;
+   
+}
+.forecast_card{
+    width:100%;
+    min-height: 100px;
+    border-radius: 15px;
+    padding:5px;
+    background-color: #27244e;
+   
+}
+.forecast_img{
+    width:100%;
+    min-height: 10px;
+}
+.forecast_img img{
+    width:25px;
+    height:25px;
+    margin-left: calc(100% - 40px);
+}
+.forecast_time_val{
+    width:100%;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.forecast_time_val span{
+    font-size:12px;
+}
+.forecast_time_val p{
+    font-size: 16px;
+    font-weight:bold;
+    font-family:poppins_bold;
+}
+.forecast_time_val sup{
+    color:#ffde59;
+}
+/*------ Home Forecast Section Ends----------*/
+
+/*=========================================
+            End of Home Section
+=========================================*/
+/*=========================================
+            Start of Footer Section
+=========================================*/
+.footer{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 20px;
+    
+}
+.footer_units{
+   width:30%;
+   height:100%;
+   padding:5px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+.footer_units img{
+    width:12px;
+    height:12px;
+}
+
+/*=========================================
+            End of Footer Section
+=========================================*/
