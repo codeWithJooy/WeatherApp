@@ -280,10 +280,143 @@ body{
 .forecast_time_val sup{
     color:#ffde59;
 }
+.forecast_graph{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: left;
+}
+.graph_options{
+    width:25%;
+}
+.graph_plot{
+    width:75%;
+}
+
 /*------ Home Forecast Section Ends----------*/
 
 /*=========================================
             End of Home Section
+=========================================*/
+/*=========================================
+            Start of Pollution Section
+=========================================*/
+.pollution_header{
+    width:100%;
+    min-height:20px;
+    font-size: 13px;
+    text-align: center;
+}
+.pollution_header span{
+    color:#ffde59;
+}
+.pollution_main{
+    width:100%;
+    margin-top: 20px;
+    min-height:20px;
+}
+.city_name{
+    width:100%;
+    min-height:22px;
+    font-size: 20px;
+    font-weight:bold;
+    line-height: 1em;
+    font-family:poppins_bold;
+    margin-bottom: 20px;
+}
+.city_name span{
+    font-size:12px;
+    font-family: poppins_regular;
+}
+.pollution_holder{
+    width:100%;
+    min-height:20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pollution_left{
+    width:60%;
+    min-height:30px;
+    line-height: 3.2em;
+}
+.aqi_name{
+    width:100%;
+    font-size: 12px;
+}
+.aqi_value{
+    width:100%;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: poppins_bold;
+    color:#ffde59;
+}
+.aqi_nature{
+    width:100%;
+    font-size:12px;
+    font-weight: bold;
+    color:red;
+}
+.pollution_right{
+    width:40%;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pollution_right img{
+    width:100%;
+    left:100%;
+    border-radius: 50%;
+}
+.pollution_others{
+    width:100%;
+    min-height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.others_unit{
+    width:45%;
+    min-height: 100px;
+    border-radius: 15px;
+    padding:10px;
+    margin-bottom: 20px;
+    background-color: #27244e;
+}
+.others_image{
+    width:100%;
+    min-height:20px;
+}
+.others_image img{
+    width:20px;
+    height:20px;
+    margin-left: calc(100% - 40px);
+}
+.others_data{
+    width:100%;
+}
+.others_data span{
+    font-weight:bold;
+    font-size: 13px;
+    color:#ffde59;
+}
+.others_data span.unit{
+    font-size: 11px!important;
+    font-weight:1;
+    margin-left: 10px;
+    color:white;
+}
+.others_data p{
+    font-size: 22px;
+    font-weight:bold;
+    margin-top: 5px;
+    color:white;
+    font-family:poppins_bold;
+}
+/*=========================================
+            End of Pollution Section
 =========================================*/
 /*=========================================
             Start of Footer Section
