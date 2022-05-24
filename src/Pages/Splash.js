@@ -1,6 +1,10 @@
 import React from 'react'
-
+import {useHistory} from 'react-router-dom'
 const Splash=()=>{
+    let history=useHistory()
+    let handleClick=()=>{
+      history.push('/home')
+    }
    return(
        <div className="main">
            <div className="container">
@@ -14,7 +18,7 @@ const Splash=()=>{
                     <p>One App for all your weather curosity.Also know about the pollution in your city</p>
                </div>
                <div className="splash_button">
-                     <button>Get Start</button>
+                     <button onClick={handleClick}>Get Start</button>
                </div>
 
            </div>

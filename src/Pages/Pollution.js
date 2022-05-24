@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../Components/Footer';
-const Pollution=()=>{
+const Pollution=({city})=>{
     return(
         <div className="main">
             <div className="container">
@@ -71,7 +71,7 @@ const Pollution=()=>{
                         </div>
                     </div>
                 </div>
-                <Footer />
+                <Footer active="pollution"/>
             </div>
         </div>
     )
