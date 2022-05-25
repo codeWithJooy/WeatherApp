@@ -400,6 +400,21 @@ body{
     width:100%;
     font-size:12px;
     font-weight: bold;
+    font-family:poppins_bold;
+}
+.api_green{
+    color:green;
+}
+.api_light_green{
+    color:lightgreen;
+}
+.api_moderate{
+    color:yellow;
+}
+.api_orange{
+    color:orange;
+}
+.api_red{
     color:red;
 }
 .pollution_right{

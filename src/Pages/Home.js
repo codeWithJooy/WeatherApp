@@ -9,6 +9,9 @@ const Home=({city})=>{
    const api='35907845a80a9a5cfecf77f9b56f170e'
    let url=`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
    let [temp,setTemp]=useState('20')
+   let [cityName,SetCityName]=useState(city)
+   let [country,SetCountry]=useState("India")
+   let [timestamp,setTimeStamp]=useState(90000)
    useEffect(()=>{
       const fetchData=async()=>{
          const result=await axios(
@@ -21,6 +24,9 @@ const Home=({city})=>{
             weather_api
           )
           setTemp(weather.data.main.temp)
+          SetCityName(weather.data.name)
+          SetCountry(weather.data.sys.country)
+          setTimeStamp(weather.data.dt)
           console.log(temp)
       }
       fetchData()
@@ -29,7 +35,7 @@ const Home=({city})=>{
        <div className="main">
           <div className="container"> 
            <HomeHeader />
-           <HomeMainDisplay temp={temp} />
+           <HomeMainDisplay temp={temp} city={city} country={country} timestamp={timestamp} />
            <HomeForecasts />
            <Footer active="home"/>
           </div> 
