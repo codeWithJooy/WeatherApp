@@ -7,7 +7,7 @@ import axios from 'axios'
 
 const Home=({city})=>{
    const api='35907845a80a9a5cfecf77f9b56f170e'
-   let url=`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
+   let url=`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
    let [temp,setTemp]=useState('20')
    let [cityName,SetCityName]=useState(city)
    let [country,SetCountry]=useState("India")
