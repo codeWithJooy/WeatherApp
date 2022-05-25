@@ -11,7 +11,7 @@ const Pollution=({city})=>{
     const [pm10,setPm10]=useState(0)
     const [message,setMessage]=useState("")
     const [msgColor,setMsgColor]=useState("")
-    let url=`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
+    let url=`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
     
     const handleMessage=(aqi_val)=>{
         console.log(aqi_val)
@@ -45,7 +45,7 @@ const Pollution=({city})=>{
             let lat=result.data[0].lat
             let lon=result.data[0].lon
             setCountry(result.data[0].country)
-            let pollution_api=`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api}`
+            let pollution_api=`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api}`
             const pollution=await axios(
               pollution_api
             )
